@@ -229,25 +229,27 @@
 		<div class="container-xl">
 			<div class="row justify-content-center" data-aos="fade-up">
 				<div class="col-lg-10">
-					<div class="contact-card" data-aos="flip-up" data-aos-delay="120">
-						<div class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center justify-content-between gap-3">
-							<div data-aos="fade-up" data-aos-delay="160">
+					<div class="contact-card p-lg-5 p-md-4 p-3" data-aos="flip-up" data-aos-delay="120">
+                        <div class="row">
+							<div data-aos="fade-up" data-aos-delay="160" class="col-md-7 text-lg-start text-center">
 								<span class="section-subtitle">Contáctanos</span>
-								<h2 class="section-title mt-3 mb-0">Construyamos juntos el futuro energético de la región</h2>
+								<h2 class="section-title mt-3 mb-4 mb-lg-0">Construyamos juntos el futuro energético de la región</h2>
 							</div>
-							<div class="d-grid gap-2" data-aos="zoom-in" data-aos-delay="220">
-								<a href="https://centroenlace.org" target="_blank" rel="noreferrer" class="btn btn-outline-dark rounded-pill px-4 py-2">
-									<i class="fa-solid fa-globe me-2"></i>
-									centroenlace.org
-								</a>
-								<a href="mailto:contacto@centroenlace.org" class="btn btn-outline-dark rounded-pill px-4 py-2">
-									<i class="fa-solid fa-envelope me-2"></i>
-									contacto@centroenlace.org
-								</a>
-								<a href="https://www.linkedin.com/company/centro-enlace/" target="_blank" rel="noreferrer" class="btn btn-outline-dark rounded-pill px-4 py-2">
-									<i class="fa-brands fa-linkedin-in me-2"></i>
-									LinkedIn: centro-enlace
-								</a>
+							<div class="col-md-5 d-flex align-items-center justify-content-center" data-aos="zoom-in" data-aos-delay="220">
+                                <div class="d-grid gap-2">
+                                    <a href="https://centroenlace.org" target="_blank" rel="noreferrer" class="btn btn-outline-dark rounded-pill px-4 py-2">
+                                        <i class="fa-solid fa-globe me-2"></i>
+                                        centroenlace.org
+                                    </a>
+                                    <a href="mailto:contacto@centroenlace.org" class="btn btn-outline-dark rounded-pill px-4 py-2">
+                                        <i class="fa-solid fa-envelope me-2"></i>
+                                        contacto@centroenlace.org
+                                    </a>
+                                    <a href="https://www.linkedin.com/company/centro-enlace/" target="_blank" rel="noreferrer" class="btn btn-outline-dark rounded-pill px-4 py-2">
+                                        <i class="fa-brands fa-linkedin-in me-2"></i>
+                                        LinkedIn: centro-enlace
+                                    </a>
+                                </div>
 							</div>
 						</div>
 					</div>
