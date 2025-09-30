@@ -5,9 +5,25 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
     plugins: [
         laravel({
-            input: ['resources/css/app.css', 'resources/js/app.js'],
+            input: [
+                'resources/less/app.less',
+                'resources/less/app2.less',
+                'resources/js/app.js'
+            ],
             refresh: true,
         }),
         tailwindcss(),
     ],
+    css: {
+        preprocessorOptions: {
+            scss: {
+                // Silence Sass deprecation warnings for Bootstrap compatibility
+                silenceDeprecations: [
+                    'import',
+                    'color-functions',
+                    'global-builtin',
+                ],
+            },
+        },
+    },
 });

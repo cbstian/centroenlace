@@ -1,0 +1,595 @@
+@import 'fonts.less';
+@import 'colors.less';
+
+body {
+	font-family: "Montserrat", sans-serif;
+	background: var(--color-light);
+	color: fade(@color-dark, 87%);
+	line-height: 1.65;
+}
+
+a {
+	color: var(--color-primary);
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+a:hover,
+a:focus {
+	color: var(--color-accent);
+}
+
+main {
+	padding-top: 90px;
+	background: var(--color-light);
+}
+
+section {
+	position: relative;
+	padding: 7rem 0;
+}
+
+// Navigation Styles (copied from app.less)
+.navbar-enlace {
+	background: #fff;
+	border-bottom: 1px solid fade(@color-dark, 8%);
+	box-shadow: 0 18px 38px fade(@color-dark, 8%);
+	transition: box-shadow 0.4s ease, border-color 0.4s ease;
+}
+
+.navbar-enlace .navbar-brand img {
+	max-height: 60px;
+}
+
+.navbar-enlace .navbar-toggler {
+	border: none;
+	color: fade(@color-dark, 80%);
+}
+
+.navbar-enlace .navbar-toggler:focus {
+	box-shadow: none;
+}
+
+.navbar-enlace .navbar-toggler-icon {
+	filter: none;
+}
+
+.navbar-enlace .nav-link {
+	color: fade(@color-dark, 78%);
+	font-weight: 600;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	padding: 1.5rem 1rem;
+	transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.navbar-enlace .nav-link:hover,
+.navbar-enlace .nav-link:focus {
+	color: var(--color-primary);
+	transform: translateY(-2px);
+}
+
+.navbar-enlace .nav-item.active .nav-link {
+	color: var(--color-secondary);
+}
+
+.btn-enlace-primary {
+	background: linear-gradient(135deg, @color-accent, lighten(@color-secondary, 7%));
+	color: #fff;
+	border: none;
+	padding: 0.85rem 1.75rem;
+	border-radius: 999px;
+	font-weight: 600;
+	box-shadow: 0 10px 30px fade(@color-secondary, 25%);
+}
+
+.btn-enlace-primary:hover,
+.btn-enlace-primary:focus {
+	color: #fff;
+	box-shadow: 0 14px 36px fade(@color-secondary, 35%);
+	transform: translateY(-1px);
+}
+
+// Navigation Styles (copied from app.less)
+.navbar-enlace {
+	background: #fff;
+	border-bottom: 1px solid fade(@color-dark, 8%);
+	box-shadow: 0 18px 38px fade(@color-dark, 8%);
+	transition: box-shadow 0.4s ease, border-color 0.4s ease;
+}
+
+.navbar-enlace .navbar-brand img {
+	max-height: 60px;
+}
+
+.navbar-enlace .navbar-toggler {
+	border: none;
+	color: fade(@color-dark, 80%);
+}
+
+.navbar-enlace .navbar-toggler:focus {
+	box-shadow: none;
+}
+
+.navbar-enlace .navbar-toggler-icon {
+	filter: none;
+}
+
+.navbar-enlace .nav-link {
+	color: fade(@color-dark, 78%);
+	font-weight: 600;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	padding: 1.5rem 1rem;
+	transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.navbar-enlace .nav-link:hover,
+.navbar-enlace .nav-link:focus {
+	color: var(--color-primary);
+	transform: translateY(-2px);
+}
+
+.navbar-enlace .nav-item.active .nav-link {
+	color: var(--color-secondary);
+}
+
+.btn-enlace-primary {
+	background: linear-gradient(135deg, @color-accent, lighten(@color-secondary, 7%));
+	color: #fff;
+	border: none;
+	padding: 0.85rem 1.75rem;
+	border-radius: 999px;
+	font-weight: 600;
+	box-shadow: 0 10px 30px fade(@color-secondary, 25%);
+}
+
+.btn-enlace-primary:hover,
+.btn-enlace-primary:focus {
+	color: #fff;
+	box-shadow: 0 14px 36px fade(@color-secondary, 35%);
+	transform: translateY(-1px);
+}
+
+// Hero Section Alternative Design
+.hero-section-v2 {
+	background: linear-gradient(135deg,
+		fade(@color-primary, 96%) 0%,
+		fade(@color-secondary, 92%) 45%,
+		fade(@color-accent, 88%) 100%);
+	color: #fff;
+	overflow: hidden;
+	position: relative;
+	min-height: 85vh;
+	display: flex;
+	align-items: center;
+}
+
+.hero-section-v2::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: -20%;
+	width: 60%;
+	height: 120%;
+	background: url('/images/turbinas-viento.webp') center/cover no-repeat;
+	opacity: 0.15;
+	transform: rotate(15deg);
+	z-index: 1;
+}
+
+.hero-section-v2 > * {
+	position: relative;
+	z-index: 2;
+}
+
+.hero-badge {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	padding: 0.75rem 1.5rem;
+	background: fade(#fff, 15%);
+	border-radius: 50px;
+	font-size: 0.9rem;
+	font-weight: 600;
+	letter-spacing: 0.05em;
+	backdrop-filter: blur(10px);
+	border: 1px solid fade(#fff, 20%);
+	margin-bottom: 2rem;
+}
+
+.hero-title-v2 {
+	font-size: clamp(3rem, 7vw, 4.5rem);
+	font-weight: 800;
+	line-height: 1.1;
+	margin-bottom: 1.5rem;
+	background: linear-gradient(135deg, #fff 0%, fade(#fff, 85%) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+
+.hero-subtitle {
+	font-size: 1.35rem;
+	font-weight: 300;
+	color: fade(#fff, 92%);
+	max-width: 600px;
+	margin-bottom: 3rem;
+	line-height: 1.6;
+}
+
+.cta-group {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	align-items: center;
+}
+
+.btn-hero-primary {
+	background: linear-gradient(135deg, @color-accent 0%, lighten(@color-secondary, 8%) 100%);
+	color: #fff;
+	padding: 1rem 2.5rem;
+	border-radius: 50px;
+	font-weight: 700;
+	font-size: 1.1rem;
+	border: none;
+	box-shadow: 0 15px 35px fade(@color-accent, 30%);
+	transition: all 0.3s ease;
+}
+
+.btn-hero-primary:hover {
+	color: #fff;
+	transform: translateY(-3px);
+	box-shadow: 0 20px 45px fade(@color-accent, 40%);
+}
+
+.btn-hero-secondary {
+	color: #fff;
+	padding: 1rem 2rem;
+	border: 2px solid fade(#fff, 50%);
+	border-radius: 50px;
+	font-weight: 600;
+	background: transparent;
+	transition: all 0.3s ease;
+}
+
+.btn-hero-secondary:hover {
+	background: #fff;
+	color: @color-primary;
+	border-color: #fff;
+}
+
+
+
+// Cards Alternative Design
+.feature-card-v2 {
+	background: #fff;
+	border: none;
+	border-radius: 30px;
+	padding: 3rem 2.5rem;
+	box-shadow: 0 20px 60px fade(@color-dark, 8%);
+	transition: all 0.4s ease;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.feature-card-v2::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 5px;
+	background: linear-gradient(135deg, @color-accent, @color-secondary);
+}
+
+.feature-card-v2:hover {
+	transform: translateY(-8px);
+	box-shadow: 0 30px 80px fade(@color-dark, 15%);
+}
+
+.feature-icon-v2 {
+	width: 70px;
+	height: 70px;
+	border-radius: 20px;
+	background: linear-gradient(135deg, fade(@color-primary, 15%), fade(@color-secondary, 12%));
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 2rem;
+	color: @color-primary;
+	margin-bottom: 2rem;
+}
+
+.area-card-v2 {
+	background: #fff;
+	border: 1px solid fade(@color-primary, 8%);
+	border-radius: 25px;
+	padding: 2.8rem 2.2rem;
+	transition: all 0.4s ease;
+	height: 100%;
+	position: relative;
+}
+
+.area-card-v2:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 25px 50px fade(@color-dark, 12%);
+	border-color: fade(@color-accent, 20%);
+}
+
+.area-icon-v2 {
+	width: 60px;
+	height: 60px;
+	border-radius: 18px;
+	background: linear-gradient(135deg, fade(@color-secondary, 18%), fade(@color-accent, 15%));
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.6rem;
+	color: @color-secondary;
+	margin-bottom: 1.8rem;
+}
+
+// Section Headers
+.section-header-v2 {
+	text-align: center;
+	margin-bottom: 5rem;
+}
+
+.section-badge {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	padding: 0.6rem 1.2rem;
+	background: fade(@color-primary, 10%);
+	color: @color-primary;
+	border-radius: 25px;
+	font-size: 0.85rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	margin-bottom: 1.5rem;
+}
+
+.section-title-v2 {
+	font-size: clamp(2.2rem, 5vw, 3.2rem);
+	font-weight: 800;
+	color: @color-dark;
+	line-height: 1.2;
+	margin-bottom: 1.5rem;
+}
+
+.section-description {
+	font-size: 1.2rem;
+	color: fade(@color-dark, 75%);
+	max-width: 700px;
+	margin: 0 auto;
+	line-height: 1.6;
+}
+
+// About Section
+.about-visual {
+	position: relative;
+	height: 500px;
+	border-radius: 30px;
+	overflow: hidden;
+	background: linear-gradient(135deg, fade(@color-primary, 20%), fade(@color-secondary, 15%));
+}
+
+.about-visual::after {
+	content: '';
+	position: absolute;
+	inset: 0;
+	background: url('/images/turbinas-viento.webp') center/cover no-repeat;
+	opacity: 0.3;
+	border-radius: 30px;
+}
+
+.stats-card {
+	background: #fff;
+	border-radius: 20px;
+	padding: 2rem;
+	box-shadow: 0 15px 40px fade(@color-dark, 10%);
+	text-align: center;
+	position: absolute;
+	z-index: 3;
+}
+
+.stat-number {
+	font-size: 2.5rem;
+	font-weight: 800;
+	color: @color-primary;
+	line-height: 1;
+	margin-bottom: 0.5rem;
+}
+
+.stat-label {
+	font-size: 0.9rem;
+	color: fade(@color-dark, 70%);
+	font-weight: 600;
+}
+
+// Contact Section Alternative
+.contact-section-v2 {
+	background: linear-gradient(135deg, fade(@color-primary, 8%), fade(@color-secondary, 5%));
+	border-radius: 40px;
+	padding: 5rem 3rem;
+	margin: 3rem auto;
+	max-width: 1200px;
+	text-align: center;
+}
+
+.contact-title {
+	font-size: clamp(2rem, 4vw, 2.8rem);
+	font-weight: 700;
+	color: @color-dark;
+	margin-bottom: 1.5rem;
+}
+
+.contact-actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+	justify-content: center;
+	align-items: center;
+	margin-top: 3rem;
+}
+
+.contact-btn {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+	padding: 1rem 2rem;
+	background: #fff;
+	color: @color-dark;
+	border-radius: 50px;
+	font-weight: 600;
+	box-shadow: 0 10px 25px fade(@color-dark, 8%);
+	transition: all 0.3s ease;
+	text-decoration: none;
+}
+
+.contact-btn:hover {
+	color: @color-primary;
+	transform: translateY(-2px);
+	box-shadow: 0 15px 35px fade(@color-dark, 12%);
+}
+
+// Logo Wall Alternative
+.partners-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 3rem;
+	align-items: center;
+	justify-items: center;
+	padding: 2rem 0;
+}
+
+.partner-logo {
+	max-height: 80px;
+	filter: grayscale(20%) opacity(80%);
+	transition: all 0.3s ease;
+}
+
+.partner-logo:hover {
+	filter: grayscale(0%) opacity(100%);
+	transform: scale(1.05);
+}
+
+// Footer Alternative
+.footer-v2 {
+	background: linear-gradient(135deg, fade(@color-dark, 95%) 0%, @color-primary 100%);
+	color: #fff;
+	padding: 4rem 0 2rem;
+}
+
+.footer-v2 a {
+	color: fade(#fff, 85%);
+	transition: color 0.3s ease;
+}
+
+.footer-v2 a:hover {
+	color: #fff;
+}
+
+.footer-divider-v2 {
+	height: 1px;
+	background: linear-gradient(90deg, transparent, fade(#fff, 30%), transparent);
+	margin: 3rem 0 2rem;
+}
+
+// Footer Styles (copied from app.less)
+footer {
+	background: #fff;
+	color: fade(@color-dark, 80%);
+}
+
+.footer-light h6 {
+	color: fade(@color-dark, 70%);
+}
+
+.footer-light a {
+	color: var(--color-primary);
+	font-weight: 600;
+}
+
+.footer-light a:hover {
+	color: var(--color-accent);
+}
+
+.footer-light .footer-divider {
+	border-top: 1px solid fade(@color-dark, 10%);
+}
+
+.footer-light small {
+	color: fade(@color-dark, 70%);
+}
+
+// Media Query Styles (copied from app.less and adapted for v2)
+@media (max-width: 991.98px) {
+	.navbar-enlace .nav-link {
+		padding: 0.75rem 0;
+	}
+
+	.hero-section-v2 {
+		min-height: 70vh;
+		padding: 3rem 0;
+	}
+
+	.hero-section-v2::before {
+		right: -40%;
+		width: 80%;
+	}
+
+	.hero-insight {
+		margin-top: 2.5rem;
+	}
+
+    section {
+        padding: 2rem 1rem;
+    }
+
+    main {
+        padding-top: 85px;
+    }
+
+	.feature-card-v2,
+	.area-card-v2 {
+		padding: 2.5rem 2rem;
+	}
+
+	.cta-group {
+		flex-direction: column;
+		align-items: stretch;
+	}
+
+	.contact-actions {
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 575.98px) {
+	.feature-card-v2,
+	.area-card-v2 {
+		padding: 2rem 1.5rem;
+	}
+
+	.hero-badge {
+		font-size: 0.8rem;
+		padding: 0.6rem 1.2rem;
+	}
+
+	.hero-subtitle {
+		font-size: 1.1rem;
+	}
+
+	.contact-section-v2 {
+		padding: 3rem 2rem;
+		margin: 2rem 1rem;
+	}
+
+	.about-visual {
+		height: 300px;
+	}
+}

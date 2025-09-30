@@ -1,0 +1,46 @@
+@color-primary: #274073;
+@color-secondary: #127357;
+@color-accent: #088C4F;
+@color-emphasis: #BF1B1B;
+@color-dark: #0D0D0D;
+@color-light: #F4F7FB;
+
+:root {
+	--color-primary: @color-primary;
+	--color-secondary: @color-secondary;
+	--color-accent: @color-accent;
+	--color-emphasis: @color-emphasis;
+	--color-dark: @color-dark;
+	--color-light: @color-light;
+
+	--bs-primary: @color-primary;
+	--bs-secondary: @color-secondary;
+	--bs-success: @color-accent;
+	--bs-danger: @color-emphasis;
+	--bs-dark: @color-dark;
+	--bs-light: @color-light;
+}
+
+.bg-surface {
+	background-color: @color-light;
+}
+
+.bg-primary-soft {
+	background: fade(@color-primary, 10%);
+}
+
+.bg-dark-gradient {
+	background: linear-gradient(135deg, fade(@color-dark, 92%) 0%, fade(@color-primary, 88%) 50%, fade(@color-secondary, 88%) 100%);
+}
+
+.text-emphasis {
+	color: @color-emphasis;
+}
+
+.text-accent {
+	color: @color-accent;
+}
+
+.border-accent {
+	border-color: fade(@color-accent, 60%) !important;
+}
